@@ -1,0 +1,157 @@
+.extension {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.content-view {
+  width: 100%;
+}
+.text {
+  margin: 0 20%;
+  text-align: justify;
+  font-size: 23px;
+}
+b.head-text {
+  font-size: 35px;
+  margin: 0 auto 20px auto;
+  width: 60%;
+  display: block;
+}
+
+figure figcaption {
+  color: gray;
+  margin-left: 1%;
+  text-align: justify;
+}
+
+figure.img {
+  width: 55%;
+  margin: 10px auto;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 10px;
+}
+div.separator {
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+}
+
+.related-news {
+  margin: 20px 20% 50px 20%;
+  padding-top: 20px;
+  border-top: 1px solid gray;
+}
+.related-page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 100%;
+}
+.posts-view {
+  width: 96%;
+  margin: 0 2%;
+}
+.posts-view img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.posts-view b {
+  font-size: 18px;
+}
+
+.extension {
+  margin-top: 20px;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+.extension #datetime {
+  font-size: 20px;
+}
+
+.link-to {
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 20px;
+  color: gray;
+}
+.link-to:hover {
+  color: rgba(17, 17, 17, 0.989);
+
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 960px) and (min-width: 815px) {
+  b.head-text {
+    font-size: 29px;
+  }
+
+  .posts-view img {
+    height: 120px;
+  }
+  .posts-view b {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 814px) and (min-width: 770px) {
+  b.head-text {
+    font-size: 28px;
+  }
+  .posts-view img {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 600px) {
+  b.head-text {
+    font-size: 26px;
+  }
+  .posts-view img {
+    height: 80px;
+  }
+
+  .posts-view .link-to b {
+    font-size: 10px;
+  }
+  .related-news {
+    margin: 20px 10% 50px 10%;
+  }
+  p.text {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  b.head-text {
+    font-size: 20px;
+  }
+  figure figcaption {
+    font-size: 13.5px;
+  }
+  .link-to {
+    font-size: 15px;
+  }
+  div#datetime.right {
+    font-size: 15px;
+  }
+  .posts-view img {
+    height: 80px;
+  }
+  .link-to {
+    font-size: 7px;
+  }
+  .related-news {
+    margin: 20px 5% 50px 5%;
+  }
+  .posts-view .link-to b {
+    font-size: 10px;
+  }
+  p.text {
+    display: block;
+  }
+}

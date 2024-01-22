@@ -1,0 +1,219 @@
+#header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  box-shadow: 4px 0 2px 2px gray;
+}
+
+#header-pc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: var(--height-header); */
+  font-size: 20px;
+  width: 100%;
+}
+
+#header-pc .left {
+  margin-left: 50px;
+  height: var(--height-header);
+  display: grid;
+}
+
+#header-pc .left img {
+  height: var(--height-header);
+  place-self: center;
+  width: 150px;
+}
+
+#header-pc .right {
+  display: flex;
+  align-items: center;
+  /* height: var(--height-header); */
+  /* line-height: var(--height-header); */
+  margin-right: 62px;
+}
+#header-pc .right div {
+  margin: 0 10px;
+}
+#header .right div .navlink {
+  border-radius: 10px;
+}
+
+#header .right div .navlink1 {
+  position: relative;
+  transition: height 1s;
+}
+
+#header .right div .navlink2 {
+  position: relative;
+  transition: height 1s;
+}
+#header .right div .navlink3 {
+  position: relative;
+  transition: height 1s;
+}
+#header .right div .navlink4 {
+  position: relative;
+  transition: color height 1s;
+}
+#header .right div .navlink:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+#header .right div .navlink1::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -7px;
+  background-color: red;
+  transition: all ease 0.5s;
+}
+#header .right div .navlink2::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -7px;
+  background-color: #004800;
+  transition: all ease 0.5s;
+}
+#header .right div .navlink3::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -7px;
+  background-color: #f28705;
+  transition: all ease 0.5s;
+}
+#header .right div .navlink4::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -7px;
+  background-color: #23395d;
+  transition: all ease 0.5s;
+}
+
+#header .right div.hover:hover .navlink::after {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.right a {
+  text-decoration: none;
+  color: #000;
+}
+
+#header .right a:hover {
+  color: gray;
+  transition: 0.7s;
+}
+#header .right .menu {
+  display: none;
+}
+.sub-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  border-top: 2px solid gray;
+  margin: 0 73px 0 73px;
+}
+.sub-menu .sub-menu-flex {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.sub-menu > .icon {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.sub-menu {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.sub-menu.visible {
+  opacity: 1;
+  height: 70px;
+}
+
+.sub-menu .sub-menu-flex div.hover {
+  margin-right: 20px;
+  height: 100%;
+  line-height: 70px;
+  font-size: 23px;
+}
+.show-mobile {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 840px) and (min-width: 575px) {
+  #header .right .menu {
+    display: block;
+  }
+  #header .right div.hide-tbl {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 574px) and (min-width: 450px) {
+  #header .right .menu {
+    display: block;
+  }
+  #header .right div.hide-tbl {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub-menu .sub-menu-flex div.hover {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .show-mobile {
+    display: block;
+  }
+  .sub-menu .sub-menu-flex div.hover {
+    font-size: 13px;
+  }
+  #header .right div.hide-mobile {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  #header .right .menu {
+    display: block;
+  }
+
+  .sub-menu {
+    margin: 0 22px 0 33px;
+  }
+  .sub-menu > .icon {
+    font-size: 13px;
+    margin-right: 0;
+  }
+  #header-pc .left {
+    margin-left: 10px;
+  }
+  #header-pc .right {
+    margin-right: 10px;
+  }
+}

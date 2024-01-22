@@ -1,0 +1,90 @@
+/* Header styles */
+.header-Today {
+  padding: 20px 0 0 0;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 3px solid #777;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.logo-today {
+  color: #000;
+  font-size: 40px;
+  font-weight: 530;
+  text-decoration: none;
+  text-align: center;
+}
+
+.world {
+  color: #f5f5f5;
+  background-color: #000;
+  background-clip: padding-box;
+  font: 600 12px 16px Verdana;
+  margin: 8px 0;
+  padding: 3px 9px;
+  position: relative;
+  text-transform: capitalize;
+  border-radius: 3px;
+}
+
+.world::after {
+  border: 12px solid transparent;
+  border-left: 12px solid #000;
+  content: "";
+  position: absolute;
+  right: -24px;
+  bottom: 5px;
+}
+
+nav ul.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-top: 3px solid #777;
+  border-bottom: 3px solid #777;
+  width: 100%;
+}
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 10px 15px;
+}
+
+.navv {
+  color: #000;
+  font-size: 19px;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.navv:hover {
+  text-decoration: none;
+  color: #777;
+}
+
+/* Responsive navigation */
+/*  Mobile */
+@media screen and (max-width: 700px) {
+  .navigation {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
+  .navigation::-webkit-scrollbar {
+    color: #ffffff;
+  }
+  .navigation::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  .navigation::-webkit-scrollbar-thumb {
+    background-color: #aaaaaa49;
+  }
+}

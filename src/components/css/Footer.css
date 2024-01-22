@@ -1,0 +1,153 @@
+#footer .top {
+  background-color: #202326;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10% 20px 10%;
+}
+
+.top .left {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-right: 3%;
+  border-right: 2px solid gray;
+  padding: 20px;
+}
+
+.top .left ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.top .left ul a {
+  text-decoration: none;
+  color: #fff;
+}
+.top .right .center {
+  text-align: left;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 8% 0 4%;
+  height: 130px;
+}
+
+.bottom img {
+  height: 120px;
+  width: 200px;
+  object-fit: cover;
+}
+.center b {
+  font-size: 20px;
+}
+
+.bottom .center {
+  width: 30%;
+  font-size: 17px;
+}
+.bottom .center p {
+  text-align: left;
+  font-size: 18px;
+}
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .top {
+    padding: 20px 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 799px) and (min-width: 450px) {
+  .top {
+    display: block;
+    padding: 2%;
+  }
+  .top .left {
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+  .top .right {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top .right .center {
+    text-align: left;
+    margin-top: 10px;
+    width: 37%;
+  }
+
+  .center b {
+    font-size: 13px;
+  }
+  .bottom .center p {
+    font-size: 13px;
+    display: block;
+  }
+
+  .bottom {
+    margin: 20px 4% 0 2%;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .top {
+    display: block;
+    padding: 2%;
+  }
+  .top .left {
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-size: 11px;
+  }
+  .top .right {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* .top .right .center {
+    text-align: left;
+    margin-top: 10px;
+    width: 37%;
+  } */
+
+  .bottom .center p {
+    font-size: 11px;
+    display: block;
+  }
+  .bottom .center {
+    width: 65%;
+  }
+  /* .bottom {
+    margin: 20px 4% 0 2%;
+  } */
+  .center b {
+    font-size: 13px;
+  }
+  .hide-mobile {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .bottom img {
+    height: 70px;
+    width: 150px;
+    object-fit: cover;
+  }
+  .bottom {
+    justify-content: center;
+    /* margin: 20px 8% 0 4%; */
+    height: 100px;
+  }
+}

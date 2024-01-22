@@ -1,0 +1,425 @@
+:root {
+  --height-header: 80px;
+}
+img {
+  border-radius: 8px;
+}
+
+/* reset css and set font*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-box {
+  margin: 0 10%;
+}
+div.separator {
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+}
+
+#hot {
+  margin-top: 30px;
+}
+
+#BreakingNews {
+  margin: 30px 10%;
+}
+
+.content-hot {
+  display: flex;
+}
+.content-hot > .left {
+  width: 65%;
+  margin: 20px 0;
+  border-right: 1px solid gray;
+  order: 1;
+}
+
+.content-hot > .right {
+  width: 35%;
+  order: 2;
+}
+
+.posts .left p {
+  font-size: 15px;
+}
+.posts .left b {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.posts .left {
+  width: 65%;
+}
+.posts .right {
+  margin: 9px;
+  height: 170px;
+  width: 35%;
+}
+.posts .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.posts b:hover {
+  color: rgb(192, 42, 42);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.posts {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  text-overflow: clip;
+  text-align: left;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.posts-top {
+  width: 95%;
+  height: 450px;
+  text-overflow: clip;
+  overflow: hidden;
+  margin: 0 15px;
+}
+
+.posts-top b {
+  font-size: 23px;
+}
+.posts-top .top {
+  padding: 0;
+  margin-top: 40px;
+  width: 95%;
+  height: 190px;
+}
+.posts-top .top img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.posts-top p {
+  font-size: 16px;
+}
+.posts-top p,
+.posts p {
+  color: rgb(112, 112, 112);
+}
+
+.posts-top b:hover {
+  color: rgb(192, 42, 42);
+  text-decoration: underline;
+
+  transition: 0.5s;
+}
+
+.content-breaking-news {
+  display: flex;
+}
+
+.content-breaking-news > .left {
+  width: 35%;
+}
+
+.content-breaking-news > .right {
+  width: 65%;
+  border-left: 2px solid gray;
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.content-todayinworld {
+  display: flex;
+}
+
+.content-todayinworld > .left {
+  width: 35%;
+}
+
+.content-todayinworld > .right {
+  width: 65%;
+  border-left: 2px solid gray;
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.posts-sm {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+.posts-sm .left-sm {
+  width: 35%;
+  object-fit: cover;
+  margin: auto 0;
+}
+.posts-sm .left-sm img {
+  width: 100%;
+}
+
+.posts-sm .right-sm {
+  font-size: 15px;
+  width: 65%;
+  margin: auto 5px;
+}
+
+.posts-sm .right-sm:hover {
+  color: rgb(192, 42, 42);
+  text-decoration: underline;
+
+  transition: 0.5s;
+}
+
+.posts-bn {
+  height: 250px;
+}
+
+.posts-bn .right {
+  height: 230px;
+  width: 50%;
+  align-items: center;
+}
+
+.posts p {
+  text-align: justify;
+  width: 95%;
+}
+
+.posts-top p {
+  text-align: justify;
+  width: 95%;
+}
+.posts-top b {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.link {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#hot .list1 span {
+  margin-left: 5px;
+  font-weight: 800;
+}
+
+#BreakingNews .list-2 span {
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+.posts-bn .left b {
+  font-size: 24px;
+}
+#TodayInWorld .list-2 span {
+  background-color: black;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+  .posts .left {
+    width: 50%;
+  }
+  .posts .right {
+    height: 180px;
+    width: 50%;
+  }
+
+  .posts .left p {
+    font-size: 13px;
+  }
+  .posts .left b {
+    font-size: 18px;
+  }
+  .posts {
+    height: 200px;
+    margin: auto;
+  }
+
+  .posts-top b {
+    font-size: 21px;
+  }
+  .posts-top .top {
+    margin-top: 30px;
+    height: 170px;
+  }
+  .posts-top p {
+    font-size: 14px;
+  }
+
+  .posts-sm {
+    height: 75px;
+  }
+
+  .posts-sm .left-sm {
+    width: 35%;
+  }
+
+  .posts-sm .right-sm {
+    font-size: 13px;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 899px) and (min-width: 500px) {
+  .posts .left {
+    width: 50%;
+  }
+  .posts .right {
+    height: 160px;
+    width: 50%;
+  }
+
+  .posts .left p {
+    font-size: 13px;
+  }
+  .posts .left b {
+    font-size: 18px;
+  }
+  .posts {
+    height: 180px;
+    margin: auto;
+  }
+  .posts-bn {
+    height: 180px;
+  }
+  .posts-bn .left b {
+    font-size: 17px;
+  }
+  .posts-bn .right {
+    height: 160px;
+    width: 50%;
+    align-items: center;
+  }
+
+  .posts-top {
+    height: 420px;
+  }
+  .posts-top b {
+    font-size: 16px;
+  }
+  .posts-top .top {
+    margin-top: 30px;
+    height: 170px;
+  }
+  .posts-top p {
+    font-size: 14px;
+  }
+
+  .posts-sm {
+    height: 75px;
+    margin: 10px 0;
+  }
+
+  .posts-sm .left-sm {
+    width: 40%;
+  }
+
+  .posts-sm .right-sm {
+    font-size: 12px;
+    width: 60%;
+  }
+  .container-box {
+    margin: 0 7%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content-hot {
+    flex-direction: column;
+  }
+  .container-box {
+    margin: 0 5%;
+  }
+  .content-hot > .left {
+    width: 100%;
+    border-right: 0;
+    order: 2;
+  }
+  .content-hot > .right {
+    width: 100%;
+    order: 1;
+  }
+  .posts-top p {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .posts-top b {
+    font-size: 20px;
+  }
+  .posts .left {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .posts .right {
+    height: auto;
+    width: 50%;
+  }
+  .posts {
+    height: 120px;
+    margin: auto;
+  }
+
+  .posts .left p {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .posts .left b {
+    font-size: 17px;
+    margin: 10% 0;
+  }
+  .posts-top {
+    height: 350px;
+    border-bottom: 1px solid gray;
+  }
+  .posts-top .top {
+    width: 100%;
+  }
+
+  .content-breaking-news {
+    flex-direction: column;
+  }
+
+  .content-breaking-news > .left {
+    width: 100%;
+    order: 1;
+    border-bottom: 2px solid gray;
+  }
+  .content-breaking-news > .right {
+    width: 100%;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+
+    order: 2;
+  }
+
+  .content-todayinworld {
+    flex-direction: column;
+  }
+
+  .content-todayinworld > .left {
+    width: 100%;
+    order: 1;
+    border-bottom: 2px solid gray;
+  }
+  .content-todayinworld > .right {
+    width: 100%;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+
+    order: 2;
+  }
+}

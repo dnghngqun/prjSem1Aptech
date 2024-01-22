@@ -1,0 +1,142 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0px 0px;
+}
+iframe {
+  width: 90%;
+  height: 200px;
+}
+.box {
+  padding: 10px;
+  border-right: 1px solid rgba(170, 168, 168, 0.951);
+  border-radius: 1px;
+  /* box-shadow: 0 0 13px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  width: 100%;
+  margin: 50px 0;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 2px solid #000;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  text-align: left;
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.5s ease;
+}
+input:focus,
+textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.email-icon,
+.firstName-icon,
+.lastName-icon {
+  position: absolute;
+  right: 15px;
+  font-size: 25px;
+  color: #b4b4b4;
+  margin-top: 2px;
+}
+
+.error-message {
+  color: red;
+}
+
+input[type="radio"] {
+  margin-left: 5%;
+}
+
+.submit,
+.term {
+  text-align: center;
+}
+
+.term {
+  color: #a18a8a;
+}
+
+button[type="submit"] {
+  margin-bottom: 10px;
+  background-color: #0a313a;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #105564;
+}
+textarea {
+  width: 92%;
+}
+.box h1,
+p {
+  text-align: center;
+}
+#error-notification {
+  float: left;
+}
+.container-setting {
+  margin: 0 auto;
+}
+
+.box-right {
+  padding: 50px 0;
+}
+.box-right .title-heading-right {
+  font-size: 27px;
+}
+
+.box-right .content-aboutus {
+  width: 90%;
+  line-height: 1.5;
+}
+
+hr {
+  width: 90%;
+}
+
+span.inVietNam {
+  font-size: 23px;
+}
+
+@media screen and (max-width: 767px) {
+  .box {
+    border-right: 0;
+    border-bottom: 1px solid rgba(170, 168, 168, 0.951);
+  }
+  .box-right {
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+  }
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .box-right .content-aboutus {
+    width: 100%;
+  }
+}
