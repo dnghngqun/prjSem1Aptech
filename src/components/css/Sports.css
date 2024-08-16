@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 #football,
 #golf,
 #swimming,
@@ -86,7 +92,7 @@
 }
 .global .global-left b:hover {
   color: #e28e55;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .global .global-left b {
   color: rgba(0, 0, 0, 0.7);
@@ -94,7 +100,7 @@
 
 .global-small .global-small-top b:hover {
   color: #e28e55;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .global-small .global-small-top b {
   color: rgba(0, 0, 0, 0.7);

@@ -1,6 +1,6 @@
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 import jsonData from "../data.json";
@@ -11,25 +11,20 @@ import Navbar from "./navbar/navbar";
 const TodayInWorld = () => {
   const { TodayInWorld } = jsonData;
 
-  useEffect(() => {
-    truncateText("pArticle1", 300);
-    truncateText("pArticle", 100);
-  }, []);
-
   return (
     <div className="TodayInWorld">
       <Navbar />
       <NavToday />
 
-      <main class="main-box">
-        <div class="news-container">
+      <main className="main-box">
+        <div className="news-container">
           <ul>
             <li>
               <a>World News</a>
             </li>
           </ul>
-          <section class="news-section">
-            <article class="news-article1">
+          <section className="news-section">
+            <article className="news-article1">
               <Link
                 onClick={handleLinkClick}
                 className="link"
@@ -48,12 +43,13 @@ const TodayInWorld = () => {
                 to={`/viewpage/TodayInWorld/US/${TodayInWorld.US[4].id}`}>
                 <p>
                   {TodayInWorld.US[4].content[0]}{" "}
-                  {TodayInWorld.US[4].content[1]}
+                  {TodayInWorld.US[4].content[1]}{" "}
+                  {TodayInWorld.US[4].content[2]}
                 </p>
               </Link>
             </article>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -67,7 +63,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.China[4].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -82,8 +78,8 @@ const TodayInWorld = () => {
                 </Link>
               </article>
             </div>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -97,7 +93,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.Germany[4].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -116,13 +112,17 @@ const TodayInWorld = () => {
 
           <ul>
             <li>
-              <a class="bg-slider" style={{ textDecoration: "none" }} href="#">
+              <Link
+                className="bg-slider"
+                style={{ textDecoration: "none" }}
+                to="/TodayInWorld/US"
+                onClick={handleLinkClick}>
                 US <FontAwesomeIcon icon={faChevronRight} />
-              </a>
+              </Link>
             </li>
           </ul>
-          <section class="news-section">
-            <article class="news-article1">
+          <section className="news-section">
+            <article className="news-article1">
               <Link
                 onClick={handleLinkClick}
                 className="link"
@@ -140,13 +140,13 @@ const TodayInWorld = () => {
                 className="link"
                 to={`/viewpage/TodayInWorld/US/${TodayInWorld.US[0].id}`}>
                 <p>
-                  {TodayInWorld.US[0].content[0]}
+                  {TodayInWorld.US[0].content[0]}{" "}
                   {TodayInWorld.US[0].content[1]}
                 </p>
               </Link>
             </article>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -160,7 +160,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.US[1].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -175,8 +175,8 @@ const TodayInWorld = () => {
                 </Link>
               </article>
             </div>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -190,7 +190,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.US[3].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -209,14 +209,18 @@ const TodayInWorld = () => {
 
           <ul>
             <li>
-              <a class="bg-slider" style={{ textDecoration: "none" }} href="#">
+              <Link
+                className="bg-slider"
+                style={{ textDecoration: "none" }}
+                to="/TodayInWorld/Germany"
+                onClick={handleLinkClick}>
                 Germany
                 <FontAwesomeIcon icon={faChevronRight} />
-              </a>
+              </Link>
             </li>
           </ul>
-          <section class="news-section">
-            <article class="news-article1">
+          <section className="news-section">
+            <article className="news-article1">
               <Link
                 onClick={handleLinkClick}
                 className="link"
@@ -239,8 +243,8 @@ const TodayInWorld = () => {
                 </p>
               </Link>
             </article>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -254,7 +258,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.Germany[1].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -269,8 +273,8 @@ const TodayInWorld = () => {
                 </Link>
               </article>
             </div>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -284,7 +288,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.Germany[3].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -303,13 +307,17 @@ const TodayInWorld = () => {
 
           <ul>
             <li>
-              <a class="bg-slider" style={{ textDecoration: "none" }} href="#">
+              <Link
+                className="bg-slider"
+                style={{ textDecoration: "none" }}
+                to="/TodayInWorld/Italy"
+                onClick={handleLinkClick}>
                 Italy <FontAwesomeIcon icon={faChevronRight} />
-              </a>
+              </Link>
             </li>
           </ul>
-          <section class="news-section">
-            <article class="news-article1">
+          <section className="news-section">
+            <article className="news-article1">
               <Link
                 onClick={handleLinkClick}
                 className="link"
@@ -332,8 +340,8 @@ const TodayInWorld = () => {
                 </p>
               </Link>
             </article>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -347,7 +355,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.Italy[1].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -362,8 +370,8 @@ const TodayInWorld = () => {
                 </Link>
               </article>
             </div>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -377,7 +385,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.Italy[3].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -396,13 +404,17 @@ const TodayInWorld = () => {
 
           <ul>
             <li>
-              <a class="bg-slider" style={{ textDecoration: "none" }} href="#">
+              <Link
+                className="bg-slider"
+                style={{ textDecoration: "none" }}
+                to="/TodayInWorld/China"
+                onClick={handleLinkClick}>
                 China <FontAwesomeIcon icon={faChevronRight} />
-              </a>
+              </Link>
             </li>
           </ul>
-          <section class="news-section">
-            <article class="news-article1">
+          <section className="news-section">
+            <article className="news-article1">
               <Link
                 onClick={handleLinkClick}
                 className="link"
@@ -421,12 +433,17 @@ const TodayInWorld = () => {
                 to={`/viewpage/TodayInWorld/China/${TodayInWorld.China[0].id}`}>
                 <p>
                   {TodayInWorld.China[0].content[0]}{" "}
-                  {TodayInWorld.China[0].content[1]}
+                  {TodayInWorld.China[0].content[1]}{" "}
+                  {TodayInWorld.China[0].content[2]}{" "}
+                  {TodayInWorld.China[0].content[3]}{" "}
+                  {TodayInWorld.China[0].content[4]}{" "}
+                  {TodayInWorld.China[0].content[5]}{" "}
+                  {TodayInWorld.China[0].content[6]}
                 </p>
               </Link>
             </article>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -440,7 +457,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.China[1].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -455,13 +472,17 @@ const TodayInWorld = () => {
                 </Link>
               </article>
             </div>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
                   to={`/viewpage/TodayInWorld/China/${TodayInWorld.China[3].id}`}>
-                  <img src={TodayInWorld.China[3].images[0]} alt=" " />
+                  <img
+                    src={TodayInWorld.China[3].images[0]}
+                    style={{ height: "250px", objectFit: "cover" }}
+                    alt=" "
+                  />
                 </Link>
                 <Link
                   onClick={handleLinkClick}
@@ -470,7 +491,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.China[3].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -489,18 +510,26 @@ const TodayInWorld = () => {
 
           <ul>
             <li>
-              <a class="bg-slider" href="#" style={{ textDecoration: "none" }}>
+              <Link
+                className="bg-slider"
+                to="/TodayInWorld/Japan"
+                style={{ textDecoration: "none" }}
+                onClick={handleLinkClick}>
                 Japan <FontAwesomeIcon icon={faChevronRight} />
-              </a>
+              </Link>
             </li>
           </ul>
-          <section class="news-section">
-            <article class="news-article1">
+          <section className="news-section">
+            <article className="news-article1">
               <Link
                 onClick={handleLinkClick}
                 className="link"
                 to={`/viewpage/TodayInWorld/Japan/${TodayInWorld.Japan[0].id}`}>
-                <img src={TodayInWorld.Japan[0].images[0]} alt=" " />
+                <img
+                  src={TodayInWorld.Japan[0].images[0]}
+                  style={{ height: "300px", objectFit: "cover" }}
+                  alt=" "
+                />
               </Link>
               <Link
                 onClick={handleLinkClick}
@@ -514,12 +543,14 @@ const TodayInWorld = () => {
                 to={`/viewpage/TodayInWorld/Japan/${TodayInWorld.Japan[0].id}`}>
                 <p>
                   {TodayInWorld.Japan[0].content[0]}{" "}
-                  {TodayInWorld.Japan[0].content[1]}
+                  {TodayInWorld.Japan[0].content[1]}{" "}
+                  {TodayInWorld.Japan[0].content[2]}{" "}
+                  {TodayInWorld.Japan[0].content[3]}
                 </p>
               </Link>
             </article>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -533,7 +564,7 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.Japan[1].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
@@ -548,13 +579,17 @@ const TodayInWorld = () => {
                 </Link>
               </article>
             </div>
-            <div class="related">
-              <article class="news-article">
+            <div className="related">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
                   to={`/viewpage/TodayInWorld/Japan/${TodayInWorld.Japan[3].id}`}>
-                  <img src={TodayInWorld.Japan[3].images[0]} alt=" " />
+                  <img
+                    src={TodayInWorld.Japan[3].images[0]}
+                    style={{ height: "220px", objectFit: "cover" }}
+                    alt=" "
+                  />
                 </Link>
                 <Link
                   onClick={handleLinkClick}
@@ -563,12 +598,16 @@ const TodayInWorld = () => {
                   <h3>{TodayInWorld.Japan[3].title}</h3>
                 </Link>
               </article>
-              <article class="news-article">
+              <article className="news-article">
                 <Link
                   onClick={handleLinkClick}
                   className="link"
                   to={`/viewpage/TodayInWorld/Japan/${TodayInWorld.Japan[4].id}`}>
-                  <img src={TodayInWorld.Japan[4].images[0]} alt=" " />
+                  <img
+                    src={TodayInWorld.Japan[4].images[0]}
+                    alt=" "
+                    style={{ height: "220px", objectFit: "cover" }}
+                  />
                 </Link>
                 <Link
                   onClick={handleLinkClick}
@@ -597,15 +636,4 @@ const TodayInWorld = () => {
 export default TodayInWorld;
 const handleLinkClick = () => {
   window.scrollTo(0, 0);
-};
-const truncateText = (className, maxLength) => {
-  const elements = document.getElementsByClassName(className);
-
-  for (let i = 0; i < elements.length; i++) {
-    let text = elements[i].textContent.trim();
-    if (text.length > maxLength) {
-      text = text.substring(0, maxLength - 3) + "...";
-      elements[i].textContent = text;
-    }
-  }
 };

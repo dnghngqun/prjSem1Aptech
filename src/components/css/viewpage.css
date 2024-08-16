@@ -61,8 +61,16 @@ div.separator {
   object-fit: cover;
   border-radius: 10px;
 }
-.posts-view b {
-  font-size: 18px;
+#relatedHover {
+  font-size: 20px;
+  text-align: left;
+  display: grid;
+  width: 100%;
+  margin-top: -20px;
+}
+
+#relatedHover:hover {
+  text-decoration: underline;
 }
 
 .extension {

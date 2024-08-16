@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
@@ -6,6 +7,7 @@ import Footer from "../Footer";
 import "../css/child.css";
 import NavSports from "../navbar/NavSports";
 import Navbar from "../navbar/navbar";
+
 const SportsChild = () => {
   const { category } = useParams();
   console.log(category);
@@ -315,29 +317,29 @@ const SportsChild = () => {
       </div>
       <div className="separate-child"></div>
       <nav aria-label="Page navigation" style={{ marginTop: "1vh" }}>
-        <ul class="pagination justify-content-center w-100 ">
-          <li class="page-item disabled">
-            <a class="page-link" href="#">
+        <ul className="pagination justify-content-center w-100 ">
+          <li className="page-item disabled">
+            <a className="page-link" href="#">
               Previous
             </a>
           </li>
-          <li class="page-item active">
-            <a class="page-link" href="#">
+          <li className="page-item active">
+            <a className="page-link" href="#">
               1
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               2
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               3
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               Next
             </a>
           </li>

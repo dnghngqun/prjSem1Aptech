@@ -86,7 +86,7 @@
 .content .content-left b:hover {
   color: rgb(9, 102, 232);
   text-decoration: underline;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .content .content-left b {
   color: rgba(0, 0, 0, 0.7);
@@ -95,7 +95,7 @@
 .content-small .content-small-top b:hover {
   color: rgb(9, 102, 232);
   text-decoration: underline;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .content-small .content-small-top b {
   color: rgba(0, 0, 0, 0.7);

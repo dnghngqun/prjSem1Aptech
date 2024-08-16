@@ -130,7 +130,7 @@ const Footer = () => {
             <br />
             <FontAwesomeIcon icon={faPhone} style={{ color: "#ffffff" }} />
             <span style={{ color: "#fff", marginLeft: "4px" }}>
-              (+1) 202 861 0737
+              (+65) 202 861 0737
             </span>
           </div>
         </div>
@@ -147,7 +147,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="hide-mobile">
-          <span>©2024 DNBC company</span>
+          <span>©Copyright by Group2</span>
         </div>
       </div>
     </div>

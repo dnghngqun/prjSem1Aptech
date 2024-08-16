@@ -6,6 +6,7 @@ const NavSports = () => {
     <div className="nav-sports">
       <div className="nav-left">
         <NavLink
+          className="navLink"
           onClick={handleLinkClick}
           to="/Sports"
           style={{ textDecoration: "none" }}>
@@ -13,22 +14,28 @@ const NavSports = () => {
         </NavLink>
       </div>
       <nav className="nav-right">
-        <NavLink onClick={handleLinkClick} to="/Sports/Football">
+        <NavLink
+          className="navLink"
+          onClick={handleLinkClick}
+          to="/Sports/Football">
           <div>Football</div>
         </NavLink>
-        <NavLink onClick={handleLinkClick} to="/Sports/Golf">
+        <NavLink
+          className="navLink"
+          onClick={handleLinkClick}
+          to="/Sports/Golf">
           <div>Golf</div>
         </NavLink>
-        <NavLink onClick={handleLinkClick} to="#tennis">
+        <NavLink className="navLink" onClick={handleLinkClick} to="#tennis">
           <div>Tennis</div>
         </NavLink>
-        <NavLink onClick={handleLinkClick} to="#badminton">
+        <NavLink className="navLink" onClick={handleLinkClick} to="#badminton">
           <div>Badminton</div>
         </NavLink>
-        <NavLink onClick={handleLinkClick} to="#swimming">
+        <NavLink className="navLink" onClick={handleLinkClick} to="#swimming">
           <div>Swimming</div>
         </NavLink>
-        <NavLink onClick={handleLinkClick} to="#cycling">
+        <NavLink className="navLink" onClick={handleLinkClick} to="#cycling">
           <div style={{ borderRight: "0" }}>Cycling</div>
         </NavLink>
       </nav>

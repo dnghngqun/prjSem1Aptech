@@ -748,29 +748,29 @@ const TodayChild = () => {
       </div>
       <div className="separate-child"></div>
       <nav aria-label="Page navigation" style={{ marginTop: "1vh" }}>
-        <ul class="pagination justify-content-center w-100 ">
-          <li class="page-item disabled">
-            <a class="page-link" href="#">
+        <ul className="pagination justify-content-center w-100 ">
+          <li className="page-item disabled">
+            <a className="page-link" href="#">
               Previous
             </a>
           </li>
-          <li class="page-item active">
-            <a class="page-link" href="#">
+          <li className="page-item active">
+            <a className="page-link" href="#">
               1
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               2
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               3
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               Next
             </a>
           </li>

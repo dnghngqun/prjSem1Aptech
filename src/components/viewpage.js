@@ -79,7 +79,7 @@ const Viewpage = (props) => {
             Related news
           </span>
         </div>
-        <div class="separator" style={{ backgroundColor: "black" }}></div>
+        <div className="separator" style={{ backgroundColor: "black" }}></div>
         <div className="related-page">
           {relatedArticles.map((relatedArticles) => (
             <div className="posts-view" key={relatedArticles.id}>
@@ -222,6 +222,13 @@ function findArticle(category, subCategory, id) {
   return articles || null;
 }
 
+function shuffle(article) {
+  for (let i = article.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [article[i], article[j]] = [article[j], article[i]];
+  }
+  return article;
+}
 function getRelatedArticles(category, subCategory, currentArticleId) {
   const { TodayInWorld, Business, Sports } = jsonData;
 
@@ -237,8 +244,9 @@ function getRelatedArticles(category, subCategory, currentArticleId) {
   const relatedArticles = articles.filter(
     (article) => article.id !== parseInt(currentArticleId)
   );
+  const shuffledArticles = shuffle(relatedArticles);
 
-  return relatedArticles.slice(0, 3);
+  return shuffledArticles.slice(0, 3);
 }
 
 const handleLinkClick = () => {

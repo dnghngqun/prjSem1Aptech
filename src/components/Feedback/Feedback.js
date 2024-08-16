@@ -9,7 +9,7 @@ const FeedbackForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [birthday, setBirthday] = useState("");
-  const [gender, setGender] = useState("");
+  const [gender, setGender] = useState("male");
   const [content, setContent] = useState("");
 
   const [emailIconClass, setEmailIconClass] = useState("uil-envelope");

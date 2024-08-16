@@ -29,6 +29,8 @@
   position: relative;
   text-transform: capitalize;
   border-radius: 3px;
+  text-decoration: none;
+  /* height: 100%; */
 }
 
 .world::after {
@@ -36,8 +38,8 @@
   border-left: 12px solid #000;
   content: "";
   position: absolute;
-  right: -24px;
-  bottom: 5px;
+  right: -23px;
+  bottom: 0px;
 }
 
 nav ul.navigation {

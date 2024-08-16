@@ -6,7 +6,7 @@ import { NavLink, useParams } from "react-router-dom";
 import "../css/nav/navbar.css";
 const Navbar = () => {
   const activeNavBar = {
-    fontWeight: "750",
+    fontWeight: "650",
   };
   const [isSubMenuVisible, setSubMenuVisible] = useState(false);
 

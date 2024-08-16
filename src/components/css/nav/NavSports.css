@@ -3,11 +3,11 @@ div.separator {
   height: 2px;
   background-color: gray;
 }
-nav {
+.nav-right {
   padding: 10px;
 }
 
-nav .link-to-sports {
+.nav-right .link-to-sports {
   text-decoration: none;
   margin-right: 15px;
 }
@@ -22,9 +22,8 @@ nav .link-to-sports {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-nav {
+.nav-right {
   display: flex;
-  margin-left: 3%;
 }
 
 .nav-sports {
@@ -48,9 +47,13 @@ nav {
 .nav-sports .nav-right div {
   font-size: 20px;
   color: #ffffffcb;
-  padding: 2px 10px 0 0;
+  padding: 0 10px 0 10px;
   border-right: 3px solid rgba(0, 0, 0, 0.647);
   font-weight: 600;
+}
+.nav-sports .nav-right .navLink {
+  text-decoration: none;
+  height: auto;
 }
 
 .nav-sports .nav-right div:hover {

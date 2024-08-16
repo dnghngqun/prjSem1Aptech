@@ -3,11 +3,11 @@ div.separator {
   height: 2px;
   background-color: gray;
 }
-nav {
+.navBusiness {
   padding: 10px;
 }
 
-nav a {
+.navBusiness a {
   text-decoration: none;
   margin-right: 15px;
   color: #000;
@@ -38,7 +38,7 @@ nav.navBusiness {
   height: 50px;
   position: absolute;
   left: 230px;
-  top: 30px;
+  top: 24px;
 }
 
 nav.navBusiness div {
@@ -120,10 +120,13 @@ nav.navBusiness div:hover {
   nav.navBusiness {
     position: absolute;
     left: 170px;
-    top: 25px;
   }
   div.logo-business {
     height: 55px;
+  }
+  nav.navBusiness div {
+    font-size: 17px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 805px) and (min-width: 700px) {
@@ -137,7 +140,6 @@ nav.navBusiness div:hover {
   nav.navBusiness {
     position: absolute;
     left: 170px;
-    top: 25px;
   }
   div.logo-business {
     height: 55px;

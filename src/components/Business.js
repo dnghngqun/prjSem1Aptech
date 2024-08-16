@@ -17,7 +17,8 @@ const Business = () => {
     <div>
       <Navbar />
       <NavBusiness />
-      <div style={{ marginTop: "40px" }}>
+      <div>
+        <br />
         <div className="container" id="FaE">
           <Link
             onClick={handleLinkClick}
@@ -26,8 +27,6 @@ const Business = () => {
             <h3>Finance and economy</h3>
           </Link>
           <div className="separator" style={{ height: "1px" }}></div>
-
-          <br />
           <div className="posts-FaE">
             <div className="left">
               <div className="content">
@@ -35,14 +34,14 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Econ[0].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Econ[0].id}`}>
                     <b>{Business.Econ[0].title}</b>
                   </Link>
                 </div>
                 <Link
                   onClick={handleLinkClick}
                   className="link content-right"
-                  href={`/viewpage/Business/Econ/${Business.Econ[0].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Econ[0].id}`}>
                   <img
                     src={Business.Econ[0].images[0]}
                     className="bottom-right"
@@ -60,14 +59,14 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Econ[1].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Econ[1].id}`}>
                     <b style={{ fontSize: "25px" }}>{Business.Econ[1].title}</b>
                   </Link>
                 </div>
                 <Link
                   onClick={handleLinkClick}
                   className="link content-right"
-                  href={`/viewpage/Business/Econ/${Business.Econ[1].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Econ[1].id}`}>
                   <img
                     src={Business.Econ[1].images[0]}
                     className="bottom-right"
@@ -88,14 +87,14 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Econ[2].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Econ[2].id}`}>
                     <b className="right">{Business.Econ[2].title}</b>
                   </Link>
                 </div>
                 <Link
                   onClick={handleLinkClick}
                   className="link content-small-bottom"
-                  href={`/viewpage/Business/Econ/${Business.Econ[2].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Econ[2].id}`}>
                   <img
                     src={Business.Econ[2].images[0]}
                     className="small-left"
@@ -113,7 +112,7 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Econ[3].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Econ[3].id}`}>
                     <b style={{ fontSize: "18px" }} className="right">
                       {Business.Econ[3].title}
                     </b>
@@ -122,7 +121,7 @@ const Business = () => {
                 <Link
                   onClick={handleLinkClick}
                   className="link content-small-bottom"
-                  href={`/viewpage/Business/Econ/${Business.Econ[3].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Econ[3].id}`}>
                   <img
                     src={Business.Econ[3].images[0]}
                     className="small-left"
@@ -140,7 +139,7 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Econ[4].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Econ[4].id}`}>
                     <b style={{ fontSize: "18px" }} className="right">
                       {Business.Econ[4].title}
                     </b>
@@ -149,7 +148,7 @@ const Business = () => {
                 <Link
                   onClick={handleLinkClick}
                   className="link content-small-bottom"
-                  href={`/viewpage/Business/Econ/${Business.Econ[4].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Econ[4].id}`}>
                   <img
                     src={Business.Econ[4].images[0]}
                     className="small-left"
@@ -176,7 +175,6 @@ const Business = () => {
 
           <div className="separator" style={{ height: "1px" }}></div>
 
-          <br />
           <div className="posts-ToB">
             <div className="left">
               <div className="content">
@@ -184,14 +182,14 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Tech[0].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Tech[0].id}`}>
                     <b>{Business.Tech[0].title}</b>
                   </Link>
                 </div>
                 <Link
                   onClick={handleLinkClick}
                   className="link content-right"
-                  href={`/viewpage/Business/Econ/${Business.Tech[0].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Tech[0].id}`}>
                   <img
                     src={Business.Tech[0].images[0]}
                     className="bottom-right"
@@ -209,14 +207,14 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Tech[1].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Tech[1].id}`}>
                     <b style={{ fontSize: "25px" }}>{Business.Tech[1].title}</b>
                   </Link>
                 </div>
                 <Link
                   onClick={handleLinkClick}
                   className="link content-right"
-                  href={`/viewpage/Business/Econ/${Business.Tech[1].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Tech[1].id}`}>
                   <img
                     src={Business.Tech[1].images[0]}
                     className="bottom-right"
@@ -237,14 +235,14 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Tech[2].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Tech[2].id}`}>
                     <b className="right">{Business.Tech[2].title}</b>
                   </Link>
                 </div>
                 <Link
                   onClick={handleLinkClick}
                   className="link content-small-bottom"
-                  href={`/viewpage/Business/Econ/${Business.Tech[2].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Tech[2].id}`}>
                   <img
                     src={Business.Tech[2].images[0]}
                     className="small-left"
@@ -262,7 +260,7 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Tech[3].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Tech[3].id}`}>
                     <b style={{ fontSize: "18px" }} className="right">
                       {Business.Tech[3].title}
                     </b>
@@ -271,7 +269,7 @@ const Business = () => {
                 <Link
                   onClick={handleLinkClick}
                   className="link content-small-bottom"
-                  href={`/viewpage/Business/Econ/${Business.Tech[3].id}`}>
+                  to={`/viewpage/Business/Econ/${Business.Tech[3].id}`}>
                   <img
                     src={Business.Tech[3].images[0]}
                     className="small-left"
@@ -289,7 +287,7 @@ const Business = () => {
                   <Link
                     onClick={handleLinkClick}
                     className="link"
-                    href={`/viewpage/Business/Econ/${Business.Tech[4].id}`}>
+                    to={`/viewpage/Business/Econ/${Business.Tech[4].id}`}>
                     <b style={{ fontSize: "18px" }} className="right">
                       {Business.Tech[4].title}
                     </b>

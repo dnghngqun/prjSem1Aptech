@@ -29,9 +29,9 @@
 #header-pc .right {
   display: flex;
   align-items: center;
-  /* height: var(--height-header); */
-  /* line-height: var(--height-header); */
   margin-right: 62px;
+  /* justify-content: space-between; */
+  width: 510px;
 }
 #header-pc .right div {
   margin: 0 10px;
@@ -171,7 +171,11 @@
     margin: 0;
     padding: 0;
   }
+  #header-pc .right {
+    width: 200px;
+  }
 }
+
 @media screen and (max-width: 574px) and (min-width: 450px) {
   #header .right .menu {
     display: block;
@@ -184,6 +188,10 @@
 
   .sub-menu .sub-menu-flex div.hover {
     font-size: 15px;
+  }
+  #header-pc .right {
+    margin-right: 10px;
+    width: 100px;
   }
 }
 
@@ -215,5 +223,14 @@
   }
   #header-pc .right {
     margin-right: 10px;
+    width: 140px;
+  }
+  #FaE,
+  #ToB,
+  #Business,
+  #WK {
+    display: block;
+    margin: 0px 1%;
+    width: 98%;
   }
 }

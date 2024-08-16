@@ -1,7 +1,10 @@
-.TodayInWorld {
-  font-family: "Open sans", sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.TodayInWorld {
+  font-family: "Open sans", sans-serif;
   align-items: center;
   width: 100%;
 }
@@ -22,7 +25,7 @@
 
 .news-container li {
   font-size: 24px;
-  margin: 20px 0 20px 0;
+  margin: 50px 0 -27px 0;
   color: #333;
   text-transform: uppercase;
   border-top: 2px solid #a4a4a4;
@@ -124,6 +127,10 @@ img {
   font-size: 15px;
 }
 
+.link {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
 /* Grid layout for news articles within each section */
 .news-section,
 .news-articles {

@@ -16,9 +16,9 @@ const Sports = () => {
   return (
     <div className="body">
       <Navbar />
-
       <NavSports />
-      <div style={{ marginTop: "40px" }}>
+      <div>
+        <br />
         <div className="container" id="football">
           <Link
             onClick={handleLinkClick}
@@ -27,8 +27,6 @@ const Sports = () => {
             <h3>Football</h3>
           </Link>
           <div className="separator" style={{ height: "1px" }}></div>
-
-          <br />
           <div className="sports-football">
             <div className="left">
               <div className="global">
@@ -180,7 +178,6 @@ const Sports = () => {
 
           <div className="separator" style={{ height: "1px" }}></div>
 
-          <br />
           <div className="sports-golf">
             <div className="left">
               <div className="global">
